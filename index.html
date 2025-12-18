@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rakesh Gokulapati | Python Full Stack Developer</title>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#4f46e5',
+            secondary: '#9333ea'
+          },
+          boxShadow: {
+            soft: '0 10px 30px rgba(0,0,0,0.08)',
+            glass: '0 8px 32px rgba(31,38,135,0.15)'
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    html { scroll-behavior: smooth; }
+
+    .skill-chip {
+  display: inline-block;
+  padding: 0.6rem 1rem;
+  border-radius: 9999px;
+  background: #f8fafc;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #334155;
+  border: 1px solid #e2e8f0;
+  transition: all 0.3s ease;
+}
+
+.skill-chip:hover {
+  background: #4f46e5;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.project-chip {
+  padding: 0.4rem 0.9rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  color: #334155;
+  transition: all 0.3s ease;
+}
+
+.project-chip:hover {
+  background: #4f46e5;
+  color: white;
+}
+
+
+  </style>
+</head>
+
+<body class="bg-slate-50 text-slate-800">
+
+<!-- NAVBAR -->
+<header class="fixed w-full bg-white/80 backdrop-blur-lg border-b z-50">
+  <nav class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+    <h1 class="text-xl font-extrabold text-primary"><B>GOKULAPATI RAKESH</B><span class="text-secondary">.</span></h1>
+    <ul class="hidden md:flex space-x-10 text-sm font-semibold">
+      <li><a href="#home" class="hover:text-primary">Home</a></li>
+      <li><a href="#about" class="hover:text-primary">About</a></li>
+      <li><a href="#experience" class="hover:text-primary">Experience</a></li>
+      <li><a href="#skills" class="hover:text-primary">Skills</a></li>
+      <li><a href="#projects" class="hover:text-primary">Projects</a></li>
+      <li><a href="#contact" class="hover:text-primary">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section id="home" class="pt-36 pb-28 bg-gradient-to-br from-primary via-indigo-600 to-secondary text-white">
+  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-14 items-center">
+
+    <div>
+      <span class="inline-block mb-4 px-4 py-1 rounded-full bg-white/20 text-sm">
+        Python Full Stack Developer
+      </span>
+
+      <h2 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6">
+        Building Enterprise<br/>
+        <span class="text-indigo-200">Web Applications</span>
+      </h2>
+
+      <p class="text-lg text-indigo-100 mb-10 max-w-xl">
+        3+ years of experience in designing, developing and deploying scalable
+        applications using Python, Django and modern frontend technologies.
+      </p>
+
+      <div class="flex gap-5 flex-wrap">
+        <a href="#projects"
+          class="bg-white text-primary px-7 py-3 rounded-xl font-semibold shadow-soft hover:scale-105 transition">
+          View Projects
+        </a>
+        <a href="#contact"
+          class="border border-white px-7 py-3 rounded-xl font-semibold hover:bg-white hover:text-primary transition">
+          Contact Me
+        </a>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-2 gap-6">
+      <div class="bg-white/15 backdrop-blur-lg p-6 rounded-2xl text-center shadow-glass">
+        <h3 class="text-3xl font-bold">3 +</h3>
+        <p class="text-sm mt-2">Years Experience</p>
+      </div>
+      <div class="bg-white/15 backdrop-blur-lg p-6 rounded-2xl text-center shadow-glass">
+        <h3 class="text-3xl font-bold">10+</h3>
+        <p class="text-sm mt-2">Projects</p>
+      </div>
+      <div class="bg-white/15 backdrop-blur-lg p-6 rounded-2xl text-center shadow-glass">
+        <h3 class="text-3xl font-bold">5+</h3>
+        <p class="text-sm mt-2">Technologies</p>
+      </div>
+      <div class="bg-white/15 backdrop-blur-lg p-6 rounded-2xl text-center shadow-glass">
+        <h3 class="text-3xl font-bold">100%</h3>
+        <p class="text-sm mt-2">Commitment</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="py-28 bg-gradient-to-b from-slate-50 to-white">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <!-- Section Header -->
+    <div class="text-center mb-16">
+      <p class="uppercase tracking-widest text-sm text-primary font-semibold mb-3">
+        Who I Am
+      </p>
+      <h3 class="text-3xl md:text-4xl font-extrabold text-slate-800">
+        About Me
+      </h3>
+      <div class="w-20 h-1 bg-primary mx-auto mt-5 rounded-full"></div>
+    </div>
+
+    <!-- Content -->
+    <div class="grid md:grid-cols-2 gap-14 items-center">
+
+      <!-- Left Content -->
+      <div class="bg-white rounded-3xl shadow-soft p-10 md:p-12">
+        <h4 class="text-2xl font-bold text-slate-800 mb-6">
+          Python Full Stack Developer
+        </h4>
+
+        <p class="text-slate-600 leading-relaxed mb-6">
+          I am a results-oriented <span class="font-semibold text-slate-800">
+          Python Full Stack Developer</span> with strong experience in building
+          secure, scalable, and maintainable web applications.
+        </p>
+
+        <p class="text-slate-600 leading-relaxed mb-6">
+          My core expertise includes
+          <strong>Django, Flask, MySQL, HTML, CSS</strong>, and
+          <strong>JavaScript</strong>. I focus on writing clean, testable code
+          while following industry-standard MVC / MTV architecture.
+        </p>
+
+        <p class="text-slate-600 leading-relaxed">
+          I have delivered real-time enterprise solutions such as
+          <strong>HRMS, LMS, and Job Portals</strong>, ensuring performance,
+          security, and long-term scalability.
+        </p>
+      </div>
+
+      <!-- Right Highlights -->
+      <div class="grid gap-6">
+
+        <div class="flex items-start gap-5 bg-white p-6 rounded-2xl shadow-soft hover:shadow-lg transition">
+          <div class="w-12 h-12 flex items-center justify-center rounded-xl bg-primary/10 text-primary text-xl">
+            💼
+          </div>
+          <div>
+            <h4 class="text-lg font-bold text-slate-800">3+ Years Experience</h4>
+            <p class="text-sm text-slate-500">
+              Hands-on experience in real-world software development
+            </p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-5 bg-white p-6 rounded-2xl shadow-soft hover:shadow-lg transition">
+          <div class="w-12 h-12 flex items-center justify-center rounded-xl bg-primary/10 text-primary text-xl">
+            🏢
+          </div>
+          <div>
+            <h4 class="text-lg font-bold text-slate-800">Enterprise Projects</h4>
+            <p class="text-sm text-slate-500">
+              Worked on production-grade business applications
+            </p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-5 bg-white p-6 rounded-2xl shadow-soft hover:shadow-lg transition">
+          <div class="w-12 h-12 flex items-center justify-center rounded-xl bg-primary/10 text-primary text-xl">
+            ⚙️
+          </div>
+          <div>
+            <h4 class="text-lg font-bold text-slate-800">Scalable Architecture</h4>
+            <p class="text-sm text-slate-500">
+              Clean code, best practices & performance-driven design
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- EXPERIENCE -->
+<!-- EXPERIENCE -->
+<section id="experience" class="py-28 bg-gradient-to-br from-slate-100 to-slate-50">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <!-- Header -->
+    <div class="text-center mb-20">
+      <p class="uppercase tracking-widest text-sm text-primary font-semibold mb-3">
+        Experience
+      </p>
+      <h3 class="text-3xl md:text-4xl font-extrabold text-slate-800">
+        Where I’ve Worked
+      </h3>
+      <div class="w-20 h-1 bg-primary mx-auto mt-5 rounded-full"></div>
+    </div>
+
+    <!-- Experience Card -->
+    <div class="relative bg-white rounded-3xl shadow-soft p-12 md:p-16 overflow-hidden">
+
+      <!-- Decorative Gradient -->
+      <div class="absolute -top-24 -right-24 w-72 h-72 bg-primary/10 rounded-full blur-3xl"></div>
+
+      <!-- Content -->
+      <div class="relative grid md:grid-cols-3 gap-10 items-start">
+
+        <!-- Company -->
+        <div>
+          <h4 class="text-2xl font-bold text-slate-800">
+          Developtrees Dsr It Solutions Private Limited
+          </h4>
+          <p class="text-slate-500 mt-2">
+            Python Developer
+          </p>
+
+          <span class="inline-block mt-6 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-semibold">
+            3+ Years
+          </span>
+        </div>
+
+        <!-- Responsibilities -->
+        <div class="md:col-span-2">
+          <p class="text-slate-600 leading-relaxed mb-8">
+            As a Python Developer, I contributed to designing and delivering
+            enterprise-grade applications with a strong focus on scalability,
+            performance, and maintainability.
+          </p>
+
+          <div class="grid sm:grid-cols-2 gap-6">
+            
+            <div class="flex gap-4 items-start p-5 rounded-2xl bg-slate-50 hover:shadow-soft transition">
+              <div class="w-10 h-10 flex items-center justify-center rounded-xl bg-primary/10 text-primary font-bold">
+                01
+              </div>
+              <p class="text-slate-600">
+                Developed Django applications using MVC / MTV architecture
+              </p>
+            </div>
+
+            <div class="flex gap-4 items-start p-5 rounded-2xl bg-slate-50 hover:shadow-soft transition">
+              <div class="w-10 h-10 flex items-center justify-center rounded-xl bg-primary/10 text-primary font-bold">
+                02
+              </div>
+              <p class="text-slate-600">
+                Built secure role-based authentication and authorization systems
+              </p>
+            </div>
+
+            <div class="flex gap-4 items-start p-5 rounded-2xl bg-slate-50 hover:shadow-soft transition">
+              <div class="w-10 h-10 flex items-center justify-center rounded-xl bg-primary/10 text-primary font-bold">
+                03
+              </div>
+              <p class="text-slate-600">
+                Integrated MySQL databases and REST APIs for data-driven features
+              </p>
+            </div>
+
+            <div class="flex gap-4 items-start p-5 rounded-2xl bg-slate-50 hover:shadow-soft transition">
+              <div class="w-10 h-10 flex items-center justify-center rounded-xl bg-primary/10 text-primary font-bold">
+                04
+              </div>
+              <p class="text-slate-600">
+                Collaborated with frontend, QA, and DevOps teams for releases
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- SKILLS -->
+<!-- SKILLS -->
+<section id="skills" class="py-28 bg-gradient-to-b from-white to-slate-50">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <!-- Header -->
+    <div class="text-center mb-20">
+      <p class="uppercase tracking-widest text-sm text-primary font-semibold mb-3">
+        Expertise
+      </p>
+      <h3 class="text-3xl md:text-4xl font-extrabold text-slate-800">
+        Technical Skills
+      </h3>
+      <div class="w-20 h-1 bg-primary mx-auto mt-5 rounded-full"></div>
+    </div>
+
+    <!-- Skill Groups -->
+    <div class="grid lg:grid-cols-3 gap-10">
+
+      <!-- Backend -->
+      <div class="bg-white rounded-3xl shadow-soft p-10 hover:shadow-lg transition">
+        <h4 class="text-xl font-bold text-slate-800 mb-6 flex items-center gap-3">
+          <span class="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center text-primary">
+            ⚙️
+          </span>
+          Backend Development
+        </h4>
+
+        <div class="space-y-4">
+          <span class="skill-chip">Python</span>
+          <span class="skill-chip">Django</span>
+          <span class="skill-chip">Flask</span>
+          <span class="skill-chip">REST APIs</span>
+          <span class="skill-chip">Authentication & Authorization</span>
+        </div>
+      </div>
+
+      <!-- Frontend -->
+      <div class="bg-white rounded-3xl shadow-soft p-10 hover:shadow-lg transition">
+        <h4 class="text-xl font-bold text-slate-800 mb-6 flex items-center gap-3">
+          <span class="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center text-primary">
+            🎨
+          </span>
+          Frontend Development
+        </h4>
+
+        <div class="space-y-4">
+          <span class="skill-chip">HTML5</span>
+          <span class="skill-chip">CSS3</span>
+          <span class="skill-chip">JavaScript</span>
+          <span class="skill-chip">Responsive Design</span>
+          <span class="skill-chip">Tailwind CSS</span>
+        </div>
+      </div>
+
+      <!-- Database & Tools -->
+      <div class="bg-white rounded-3xl shadow-soft p-10 hover:shadow-lg transition">
+        <h4 class="text-xl font-bold text-slate-800 mb-6 flex items-center gap-3">
+          <span class="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center text-primary">
+            🗄️
+          </span>
+          Database & Tools
+        </h4>
+
+        <div class="space-y-4">
+          <span class="skill-chip">MySQL</span>
+          <span class="skill-chip">Git & GitHub</span>
+          <span class="skill-chip">Linux Basics</span>
+          <span class="skill-chip">Deployment</span>
+          <span class="skill-chip">Version Control</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- PROJECTS -->
+<!-- PROJECTS -->
+<section id="projects" class="py-28 bg-gradient-to-b from-slate-100 to-white">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <!-- Header -->
+    <div class="text-center mb-20">
+      <p class="uppercase tracking-widest text-sm text-primary font-semibold mb-3">
+        Work
+      </p>
+      <h3 class="text-3xl md:text-4xl font-extrabold text-slate-800">
+        Selected Projects
+      </h3>
+      <div class="w-20 h-1 bg-primary mx-auto mt-5 rounded-full"></div>
+    </div>
+
+    <!-- Projects Grid -->
+    <div class="grid lg:grid-cols-3 gap-10">
+
+      <!-- Project Card -->
+      <div class="group bg-white rounded-3xl shadow-soft p-10 hover:shadow-xl transition">
+        <span class="inline-block mb-4 px-4 py-1 rounded-full bg-primary/10 text-primary text-xs font-semibold">
+          Enterprise Application
+        </span>
+
+        <h4 class="text-2xl font-bold text-slate-800 mb-4">
+          Job Portal System
+        </h4>
+
+        <p class="text-slate-600 leading-relaxed mb-6">
+          A full-featured recruitment platform enabling job postings,
+          candidate applications, and admin dashboards with secure
+          authentication and role-based access.
+        </p>
+
+        <!-- Tech Stack -->
+        <div class="flex flex-wrap gap-3 mb-8">
+          <span class="project-chip">Django</span>
+          <span class="project-chip">MySQL</span>
+          <span class="project-chip">HTML</span>
+          <span class="project-chip">CSS</span>
+        </div>
+
+        <!-- Footer -->
+        <div class="flex items-center justify-between">
+          <span class="text-sm text-slate-500">
+            Web Application
+          </span>
+          <span class="text-primary font-semibold group-hover:translate-x-1 transition">
+          View Details →
+          </span>
+        </div>
+      </div>
+
+      <!-- Project Card -->
+      <div class="group bg-white rounded-3xl shadow-soft p-10 hover:shadow-xl transition">
+        <span class="inline-block mb-4 px-4 py-1 rounded-full bg-primary/10 text-primary text-xs font-semibold">
+          HR Solution
+        </span>
+
+        <h4 class="text-2xl font-bold text-slate-800 mb-4">
+          HRMS Portal
+        </h4>
+
+        <p class="text-slate-600 leading-relaxed mb-6">
+          Enterprise human resource management system with employee
+          records, attendance tracking, payroll processing, and
+          role-based authorization.
+        </p>
+
+        <div class="flex flex-wrap gap-3 mb-8">
+          <span class="project-chip">Django</span>
+          <span class="project-chip">MySQL</span>
+          <span class="project-chip">RBAC</span>
+          <span class="project-chip">Bootstrap</span>
+        </div>
+
+        <div class="flex items-center justify-between">
+          <span class="text-sm text-slate-500">
+            Enterprise System
+          </span>
+          <span class="text-primary font-semibold group-hover:translate-x-1 transition">
+            View Details →
+          </span>
+        </div>
+      </div>
+
+      <!-- Project Card -->
+      <div class="group bg-white rounded-3xl shadow-soft p-10 hover:shadow-xl transition">
+        <span class="inline-block mb-4 px-4 py-1 rounded-full bg-primary/10 text-primary text-xs font-semibold">
+          Personal Finance
+        </span>
+
+        <h4 class="text-2xl font-bold text-slate-800 mb-4">
+          Expense Tracker
+        </h4>
+
+        <p class="text-slate-600 leading-relaxed mb-6">
+          A personal finance management application that helps users
+          track expenses, categorize spending, and generate analytics
+          reports for better financial planning.
+        </p>
+
+        <div class="flex flex-wrap gap-3 mb-8">
+          <span class="project-chip">Python</span>
+          <span class="project-chip">Flask</span>
+          <span class="project-chip">MySQL</span>
+          <span class="project-chip">Charts</span>
+        </div>
+
+        <div class="flex items-center justify-between">
+          <span class="text-sm text-slate-500">
+            Analytics App
+          </span>
+          <span class="text-primary font-semibold group-hover:translate-x-1 transition">
+            View Details →
+          </span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- CONTACT -->
+<!-- CONTACT -->
+<section id="contact" class="py-28 bg-gradient-to-br from-primary to-secondary text-white">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <!-- Header -->
+    <div class="text-center mb-20">
+      <p class="uppercase tracking-widest text-sm text-white/80 font-semibold mb-3">
+        Contact
+      </p>
+      <h3 class="text-3xl md:text-4xl font-extrabold">
+        Let’s Work Together
+      </h3>
+      <div class="w-20 h-1 bg-white mx-auto mt-5 rounded-full"></div>
+    </div>
+
+    <!-- Content -->
+    <div class="grid md:grid-cols-2 gap-14 items-center">
+
+      <!-- Left Content -->
+      <div>
+        <h4 class="text-2xl font-bold mb-6">
+          Open to New Opportunities
+        </h4>
+        <p class="text-white/90 leading-relaxed mb-8 max-w-xl">
+          I’m currently exploring opportunities with MNCs and product-based
+          companies where I can contribute my skills in building scalable,
+          secure, and high-performance web applications.
+        </p>
+
+        <div class="space-y-5">
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 flex items-center justify-center rounded-xl bg-white/20">
+              📧
+            </div>
+            <p class="font-semibold">gokulapatirakesh9@gmail.com</p>
+          </div>
+
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 flex items-center justify-center rounded-xl bg-white/20">
+              🔗
+            </div>
+            <p class="font-semibold">www.linkedin.com/in/rakesh-gokulapati</p>
+          </div>
+
+         
+        </div>
+      </div>
+
+      <!-- Right Card -->
+      <div class="bg-white text-slate-800 rounded-3xl shadow-xl p-10 md:p-12">
+
+        <h4 class="text-2xl font-bold mb-6">
+          Start a Conversation
+        </h4>
+
+        <p class="text-slate-600 mb-8">
+          Interested in collaborating or hiring?
+          Feel free to reach out and I’ll get back to you shortly.
+        </p>
+
+        <a href="mailto:yourname@email.com"
+           class="inline-flex items-center justify-center gap-3 w-full px-8 py-4 rounded-xl bg-primary text-white font-semibold hover:bg-secondary transition">
+          ✉️ Send Email
+        </a>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer class="bg-slate-900 text-white py-6 text-center text-sm">
+  © 2025 Rakesh Gokulapati · Python Full Stack Developer
+</footer>
+
+<!-- COMPONENT STYLES -->
+<style>
+  .skill {
+    background: white;
+    padding: 1.2rem;
+    border-radius: 1rem;
+    text-align: center;
+    font-weight: 600;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    transition: all .3s ease;
+  }
+  .skill:hover {
+    transform: translateY(-6px);
+    color: #4f46e5;
+  }
+
+  .project {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    transition: all .3s ease;
+  }
+  .project:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 45px rgba(0,0,0,0.12);
+  }
+  .project h4 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: .5rem;
+  }
+  .project p {
+    color: #64748b;
+  }
+</style>
+
+</body>
+</html>
